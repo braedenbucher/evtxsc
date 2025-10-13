@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Events>
+    <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'>
+        <System>
+            <Provider Name='Microsoft-Windows-PowerShell' Guid='{a0c1853b-5c40-4b15-8766-3cf1c58f985a}'/>
+            <EventID>4104</EventID>
+            <Version>1</Version>
+            <Level>3</Level>
+            <Task>2</Task>
+            <Opcode>15</Opcode>
+            <Keywords>0x0</Keywords>
+            <TimeCreated SystemTime='2025-10-11T07:16:31.0737329Z'/>
+            <EventRecordID>76505</EventRecordID>
+            <Correlation ActivityID='{ea81764c-37b8-000a-b326-4df0b837dc01}'/>
+            <Execution ProcessID='37776' ThreadID='29356'/>
+            <Channel>Microsoft-Windows-PowerShell/Operational</Channel>
+            <Computer>BUCHE167_DESK</Computer>
+            <Security UserID='S-1-5-21-3137646751-3230022324-1969958745-1001'/>
+        </System>
+        <EventData>
+            <Data Name='MessageNumber'>1</Data>
+            <Data Name='MessageTotal'>1</Data>
+            <Data Name='ScriptBlockText'>powershell.exe -ExecutionPolicy Bypass -WindowStyle Hidden -NonInteractive
+                -NoProfile
+            </Data>
+            <Data Name='ScriptBlockId'>90d7791e-f16d-41d8-8562-3fb2d5937a65</Data>
+            <Data Name='Path'></Data>
+        </EventData>
+    </Event>
+</Events>
