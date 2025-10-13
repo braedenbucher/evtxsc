@@ -21,6 +21,7 @@ public class main {
             System.exit(1);
         }
 
+        // Build a config for each file
         List<FileConfig> fileConfigs = buildFileConfigs(args);
 
         if (fileConfigs.isEmpty()) {
@@ -148,7 +149,6 @@ public class main {
             System.err.println("Warning: --output and --append specify the same file (" + config.outputFile + ")");
         }
 
-
         EventLog log = Loader.parseFile(config.filepath);
 
         // Determine which scans to run (default to all if not specified)
@@ -163,12 +163,12 @@ public class main {
                 default->ScanResult.empty();
             };
 
-            // Write to console (unless --no-console)
+            // Write to console
             if (!config.noConsole) {
                 ResultWriter.writeToConsole(result);
             }
 
-            // Write to output file (overwrite)
+            // Write to output file
             if (config.outputFile != null) {
                 // Extract directory and filename from path
                 File outputFile = new File(config.outputFile);
@@ -197,7 +197,7 @@ public class main {
      * Help message if no args are specified
      */
     private static void printUsage() {
-        System.out.println("Usage: [evtxsc] -f <file> [--scan <scans>] [--output <file>] [--append <file>] [--no-console] ...");
+        System.out.println("Usage: evtx-scanner -f <file> [--scan <scans>] [--output <file>] [--append <file>] [--no-console] ...");
         System.out.println();
         System.out.println("Options:");
         System.out.println("  -f <filepath>              Specify EVTX file to scan (required, repeatable)");
@@ -208,10 +208,10 @@ public class main {
         System.out.println("  --no-console               Suppress console output");
         System.out.println();
         System.out.println("Examples:");
-        System.out.println("  [evtxsc] -f security.evtx");
-        System.out.println("  [evtxsc] -f file.evtx --scan bruteforce powershell --output results.txt");
-        System.out.println("  [evtxsc] -f file1.evtx --scan bruteforce --output bf.txt \\");
-        System.out.println("           -f file2.evtx --append master.log --no-console");
+        System.out.println("  evtx-scanner -f security.evtx");
+        System.out.println("  evtx-scanner -f file.evtx --scan bruteforce powershell --output results.txt");
+        System.out.println("  evtx-scanner -f file1.evtx --scan bruteforce --output bf.txt \\");
+        System.out.println("               -f file2.evtx --append master.log --no-console");
     }
 
     // Inner class to hold configuration for each file
@@ -227,4 +227,3 @@ public class main {
         }
     }
 }
-

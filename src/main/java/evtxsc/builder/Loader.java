@@ -142,7 +142,7 @@ public class Loader {
             int element = reader.next();
 
             switch (element) {
-                case START_ELEMENT:
+                case START_ELEMENT -> {
                     eventSnippet.append("<").append(reader.getLocalName());
 
                     // attributes
@@ -155,14 +155,14 @@ public class Loader {
 
                     eventSnippet.append(">");
                     depth++;
-                    break;
-                case CHARACTERS:
+                }
+                case CHARACTERS  -> {
                     eventSnippet.append(reader.getText());
-                    break;
-                case END_ELEMENT:
+                }
+                case END_ELEMENT -> {
                     eventSnippet.append("</").append(reader.getLocalName()).append(">");
                     depth--;
-                    break;
+                }
             }
         }
         return eventSnippet.toString();
