@@ -2,33 +2,29 @@
 <Events>
     <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'>
         <System>
-            <Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/>
-            <EventID>5379</EventID>
-            <Version>0</Version>
-            <Level>0</Level>
-            <Task>13824</Task>
-            <Opcode>0</Opcode>
-            <Keywords>0x8020000000000000</Keywords>
-            <TimeCreated SystemTime='2025-09-25T19:37:32.0334947Z'/>
-            <EventRecordID>2144248</EventRecordID>
-            <Correlation ActivityID='{898a5bac-2cd9-0012-c85e-8a89d92cdc01}'/>
-            <Execution ProcessID='1796' ThreadID='26472'/>
-            <Channel>Security</Channel>
+            <Provider Name='Microsoft-Windows-PowerShell' Guid='{a0c1853b-5c40-4b15-8766-3cf1c58f985a}'/>
+            <EventID>4104</EventID>
+            <Version>1</Version>
+            <Level>3</Level>
+            <Task>2</Task>
+            <Opcode>15</Opcode>
+            <Keywords>0x0</Keywords>
+            <TimeCreated SystemTime='2025-10-11T07:16:31.0737329Z'/>
+            <EventRecordID>76505</EventRecordID>
+            <Correlation ActivityID='{ea81764c-37b8-000a-b326-4df0b837dc01}'/>
+            <Execution ProcessID='37776' ThreadID='29356'/>
+            <Channel>Microsoft-Windows-PowerShell/Operational</Channel>
             <Computer>BUCHE167_DESK</Computer>
-            <Security/>
+            <Security UserID='S-1-5-21-3137646751-3230022324-1969958745-1001'/>
         </System>
         <EventData>
-            <Data Name='SubjectUserSid'>S-1-5-21-3137646751-3230022324-1969958745-1001</Data>
-            <Data Name='SubjectUserName'>braed</Data>
-            <Data Name='SubjectDomainName'>BUCHE167_DESK</Data>
-            <Data Name='SubjectLogonId'>0x39050</Data>
-            <Data Name='TargetName'>MicrosoftAccount:user=braedenbucher@gmail.com</Data>
-            <Data Name='Type'>0</Data>
-            <Data Name='CountOfCredentialsReturned'>1</Data>
-            <Data Name='ReadOperation'>%%8100</Data>
-            <Data Name='ReturnCode'>0</Data>
-            <Data Name='ProcessCreationTime'>2025-09-25T18:35:04.0112557Z</Data>
-            <Data Name='ClientProcessId'>3200</Data>
+            <Data Name='MessageNumber'>1</Data>
+            <Data Name='MessageTotal'>1</Data>
+            <Data Name='ScriptBlockText'>powershell.exe -ExecutionPolicy Bypass -WindowStyle Hidden -NonInteractive
+                -NoProfile
+            </Data>
+            <Data Name='ScriptBlockId'>90d7791e-f16d-41d8-8562-3fb2d5937a65</Data>
+            <Data Name='Path'></Data>
         </EventData>
     </Event>
 </Events>
