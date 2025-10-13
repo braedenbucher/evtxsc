@@ -1,6 +1,6 @@
 # EVTX Scanner
 
-A Java-based Windows Event Log (EVTX) utility that quickly parses complete logs and flags suspicious events including brute force attempts, malicious PowerShell activity, and privilege escalation. 
+A Java-based Windows Event Log (EVTX) utility that quickly parses complete logs and flags suspicious events including brute force attempts, suspicious PowerShell activity, and privilege escalation. 
 
 See the [docs] for architecture and implementation.
 
@@ -76,4 +76,5 @@ Process multiple files with different configurations:
 ## Contributing
 
 Contributions are welcome. Please open an issue to discuss proposed changes.
+
 
