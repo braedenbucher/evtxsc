@@ -197,7 +197,7 @@ public class main {
      * Help message if no args are specified
      */
     private static void printUsage() {
-        System.out.println("Usage: evtx-scanner -f <file> [--scan <scans>] [--output <file>] [--append <file>] [--no-console] ...");
+        System.out.println("Usage: [evtxsc] -f <file> [--scan <scans>] [--output <file>] [--append <file>] [--no-console] ...");
         System.out.println();
         System.out.println("Options:");
         System.out.println("  -f <filepath>              Specify EVTX file to scan (required, repeatable)");
@@ -208,10 +208,10 @@ public class main {
         System.out.println("  --no-console               Suppress console output");
         System.out.println();
         System.out.println("Examples:");
-        System.out.println("  evtx-scanner -f security.evtx");
-        System.out.println("  evtx-scanner -f file.evtx --scan bruteforce powershell --output results.txt");
-        System.out.println("  evtx-scanner -f file1.evtx --scan bruteforce --output bf.txt \\");
-        System.out.println("               -f file2.evtx --append master.log --no-console");
+        System.out.println("  [evtxsc] -f security.evtx");
+        System.out.println("  [evtxsc] -f file.evtx --scan bruteforce powershell --output results.txt");
+        System.out.println("  [evtxsc] -f file1.evtx --scan bruteforce --output bf.txt \\");
+        System.out.println("           -f file2.evtx --append master.log --no-console");
     }
 
     // Inner class to hold configuration for each file
@@ -227,3 +227,4 @@ public class main {
         }
     }
 }
+
