@@ -26,29 +26,39 @@ See the [docs] for architecture and implementation.
 git clone https://github.com/braedenbucher/evtxsc.git
 cd evtxsc
 mvn clean install
+chmod +x evtxsc.sh # linux/mac only
 ```
 
 ## Usage
 
+Basic execution:
+```
+# Linux/Mac
+./evtxsc.sh [flags]
+
+# Windows
+evtxsc.bat [flags]
+```
+
 Basic scan of all event types:
 ```bash
-java -jar evtxsc.jar -f file.xml
+[evtxsc] -f file.xml
 ```
 
 Run specific scans:
 ```bash
-java -jar evtxsc.jar -f file.xml --scan bruteforce powershell
+[evtxsc] -f file.xml --scan bruteforce powershell
 ```
 
 Save results to file:
 ```bash
-java -jar evtxsc.jar -f file.xml --output results.txt
+[evtxsc] -f file.xml --output results.txt
 ```
 
 Process multiple files with different configurations:
 ```bash
-java -jar evtxsc.jar -f file1.xml --scan bruteforce --output bf.txt \
-                     -f file2.xml --append master.log --no-console
+[evtxsc] -f file1.xml --scan bruteforce --output bf.txt \
+       -f file2.xml --append master.log --no-console
 ```
 
 ### Command Line Options
@@ -66,3 +76,4 @@ java -jar evtxsc.jar -f file1.xml --scan bruteforce --output bf.txt \
 ## Contributing
 
 Contributions are welcome. Please open an issue to discuss proposed changes.
+
