@@ -32,7 +32,7 @@ chmod +x evtxsc.sh # linux/mac only
 ## Usage
 
 Basic execution:
-```
+```bash
 # Linux/Mac
 ./evtxsc.sh [flags]
 
@@ -76,6 +76,7 @@ Process multiple files with different configurations:
 ## Contributing
 
 Contributions are welcome. Please open an issue to discuss proposed changes.
+
 
 
 
