@@ -4,9 +4,9 @@ A Java-based Windows Event Log (EVTX) utility that quickly parses complete logs 
 
 See the [docs](DOCS.md) for architecture and implementation.
 
-## Features
+## Utilities
 
-**Fast XML Processing**: Concurrent XML parser builds logs in seconds.
+**Fast XML Processing**: Concurrent XML parser for high volumes of events.
 
 **\[4625] Brute Force Detection**: Flags failed login patterns\.
 
@@ -76,6 +76,7 @@ Process multiple files with different configurations:
 ## Contributing
 
 Contributions are welcome. Please open an issue to discuss proposed changes.
+
 
 
 
