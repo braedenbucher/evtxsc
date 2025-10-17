@@ -1,4 +1,4 @@
-# evtxsc - Java-Based EVTX XML Parser & Static Analyzer
+# evtxsc
 
 A Java-based Windows Event Log (EVTX) utility that quickly parses complete logs and flags suspicious events including brute force attempts, suspicious PowerShell activity, and privilege escalation. 
 
@@ -76,6 +76,7 @@ Process multiple files with different configurations:
 ## Contributing
 
 Contributions are welcome. Please open an issue to discuss proposed changes.
+
 
 
 
