@@ -73,9 +73,14 @@ Process multiple files with different configurations:
 
 `--no-console` - Suppress console output
 
+## License
+
+MIT License - see [LICENSE](LICENSE) for details
+
 ## Contributing
 
 Contributions are welcome. Please open an issue to discuss proposed changes.
+
 
 
 
