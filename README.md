@@ -5,9 +5,7 @@ A Java-based Windows Event Log (EVTX) utility that quickly parses complete logs 
 ## Utilities
 
 - \[4625] Brute Force Detection: Flags failed login patterns.
-
 - \[4104] Powershell Script Analysis: Flags script blocks with obfuscation, malicious commands, and network activity.
-
 - \[4672, 4728, 4732] Privilege Escalation Detection: Flags all privilege assignments and security group modifications.
 
 ## Installation
