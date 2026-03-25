@@ -9,7 +9,7 @@ A Java-based Windows Event Log (EVTX) utility that quickly parses complete logs 
 - \[4672, 4728, 4732] Privilege Escalation Detection: Flags all privilege assignments and security group modifications.
 
 ## Installation
-_Requires Java 17+, Apache Maven, EVTX Files in XML format._
+_Requires [Java 17+](https://www.java.com/en/), [Apache Maven](https://maven.apache.org/), [EVTX](https://learn.microsoft.com/en-us/shows/inside/event-viewer) Files in XML format._
 
 ```bash
 git clone https://github.com/braedenbucher/evtxsc.git
