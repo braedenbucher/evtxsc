@@ -2,25 +2,16 @@
 
 A Java-based Windows Event Log (EVTX) utility that quickly parses complete logs and flags suspicious events including brute force attempts, suspicious PowerShell activity, and privilege escalation. 
 
-See the [docs](DOCS.md) for architecture and implementation.
-
 ## Utilities
 
-**Fast XML Processing**: Concurrent XML parser for high volumes of events.
+- \[4625] Brute Force Detection: Flags failed login patterns.
 
-**\[4625] Brute Force Detection**: Flags failed login patterns\.
+- \[4104] Powershell Script Analysis: Flags script blocks with obfuscation, malicious commands, and network activity.
 
-**\[4104] Powershell Script Analysis**: Flags script blocks with obfuscation, malicious commands, and network activity.
-
-**\[4672, 4728, 4732] Privilege Escalation Detection**: Flags dangerous privilege assignments and security group modifications.
-
-## Requirements
-
-- Java 17 or higher
-- Apache *Maven* to build the project
-- Windows Event Log files exported to XML format
+- \[4672, 4728, 4732] Privilege Escalation Detection: Flags all privilege assignments and security group modifications.
 
 ## Installation
+_Requires Java 17+, Apache Maven, EVTX Files in XML format._
 
 ```bash
 git clone https://github.com/braedenbucher/evtxsc.git
